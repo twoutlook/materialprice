@@ -1,0 +1,19 @@
+{% extends 'weeklyreport/base.html' %}
+
+
+{% block content %}
+
+<h1>testing 123</h1>
+
+{% for item in item_list %}
+
+<!-- {{ item.reportdate }}&nbsp; -->
+({{ item.reportnum }})&nbsp;
+
+{{ item.description }}<br><br>
+<!-- <hr> -->
+
+
+{% endfor %}
+
+{% endblock %}

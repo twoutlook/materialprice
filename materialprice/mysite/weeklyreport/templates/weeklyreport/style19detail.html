@@ -1,0 +1,43 @@
+{% extends 'itaiching/base.html' %}
+
+
+{% block content %}
+
+<h1>Per Set</h1>
+
+{% for item in item_list %}
+
+{{ item.stylenum|stringformat:"02d" }}-{{ item.setnum|stringformat:"02d" }}-{{ item.movenum|stringformat:"02d" }} &nbsp;
+{{ item.title }}<br>
+<hr>
+  <!-- <td>{{ item.description }}          </td> -->
+  <!-- <td>{{ item.description }}          </td> -->
+
+
+{% endfor %}
+<br><br><br>
+{% for item in item_list %}
+
+{{ item.stylenum|stringformat:"02d" }}-{{ item.setnum|stringformat:"02d" }}-{{ item.movenum|stringformat:"02d" }} &nbsp;
+{{ item.description }}<br>
+<hr>
+  <!-- <td>{{ item.description }}          </td> -->
+  <!-- <td>{{ item.description }}          </td> -->
+
+
+{% endfor %}
+
+<br><br><br>
+{% for item in item_list %}
+
+{{ item.stylenum|stringformat:"02d" }}-{{ item.setnum|stringformat:"02d" }}-{{ item.movenum|stringformat:"02d" }} &nbsp;
+<b>{{ item.title }}</b><br>
+{{ item.description }}
+<hr>
+  <!-- <td>{{ item.description }}          </td> -->
+  <!-- <td>{{ item.description }}          </td> -->
+
+
+{% endfor %}
+
+{% endblock %}

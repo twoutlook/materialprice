@@ -1,0 +1,44 @@
+{% extends 'itaiching/base.html' %}
+
+
+{% block content %}
+  <table>
+    <tr>
+        <th>xxx</th>
+        <th>yyy</th>
+        <th>zzz</th>
+        <th></th>
+
+
+
+    </tr>
+    {% for item in item_list %}
+    <tr>
+      <td>{{ item.taichiset}}          </td>
+      <td align="center">{{ item.num }}          </td>
+      <td>{{ item.title }}          </td>
+      <!-- <td>{{ item.description }}          </td> -->
+      <!-- <td>{{ item.description }}          </td> -->
+
+    </tr>
+    {% endfor %}
+</table>
+<hr>
+</div>
+
+
+{% for item in item_list %}
+
+  <!-- {{ item.taichiset}} -->
+{{ item.num }} &nbsp;
+{{ item.title }}<br>
+<hr>
+  <!-- <td>{{ item.description }}          </td> -->
+  <!-- <td>{{ item.description }}          </td> -->
+
+
+{% endfor %}
+
+
+
+{% endblock %}

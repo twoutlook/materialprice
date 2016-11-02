@@ -1,0 +1,33 @@
+{% extends 'weeklyreport/base.html' %}
+
+
+{% block content %}
+
+
+
+{% for item in item_list %}
+
+
+<!-- {{ item.fullname  }}&nbsp; -->
+"{{ item.fullname  }}"&lt;{{ item.mailbox1  }}&gt;,{{ item.mailbox2  }},{{ item.mailbox3  }},
+
+{% if item.mailbox4 == None %}
+{% else %}
+   {{ item.mailbox4  }},
+{% endif %}
+
+{% endfor %}
+
+<h1> forwarding</h1>
+{% for item in item_list %}
+{{ item.fullname  }}<br>
+{{ item.mailbox3  }}<br>
+ ==> {{ item.mailbox1  }} &nbsp; <br><br>
+
+
+{% endfor %}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'materialprice/base.html' %}
+
+
+{% block content %}
+
+<h1>XXXMaterial Price</h1>
+<h2>{{ item.designation |stringformat:"s"}}&nbsp;</h2>
+
+{% for item in item_list %}
+
+
+  {% ifnotequal item.pricedate "总平均价" %}
+
+  {% else %}
+
+      <!-- {{ item.designation |stringformat:"s"}}&nbsp; -->
+      {{ item.yearnum |stringformat:"03d"}}&nbsp;
+      {{ item.weeknum |stringformat:"03d"}}&nbsp;
+      <!-- {{ item.pricedate }}&nbsp; -->
+      {{ item.avg  }}
+
+    <br>
+  {% endifnotequal %}
+<!-- {{ item.reportdate }}&nbsp; -->
+
+
+
+{% endfor %}
+
+{% endblock %}

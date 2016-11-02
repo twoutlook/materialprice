@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{ page_title }}</title>    
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'app001/style.css' %}" />-->
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+/*http://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
+    body { padding-top: 64px; background-color:#F2F2F2 }
+</style>
+</head>
+
+<body>
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SKYROCK 雲端佈告欄</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#">Home</a></li>-->
+            <!--<li><a href="#about">About</a></li>-->
+      
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=".">      當前用戶: {{ current_user }} </a></li>
+            <!--<li> <a  href="/app001/logout">[ 登出 ]</a></li>-->
+            <li> <a  href="{% url 'logout_view'">[ 登出 ]</a></li>
+            <li> <a target='_blank'href="/admin">[ 編輯資料 ] </a></li>
+        
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    <!--    <br><br>-->
+      <!-- Main component for a primary marketing message or call to action -->
+      <!--<div class="jumbotron" >-->
+        <!--<h1>SKYROCK 雲端佈告欄</h1>-->
+      <!--  <p>本項目於 2016-08-13 啟動</p>-->
+      <!--  <p>To see the difference between static and fixed top navbars, just scroll.</p>-->
+        <!--<p>-->
+        <!--  <a class="btn btn-lg btn-primary" href="../../help" role="button">更多文檔說明 &raquo;</a>-->
+        <!--</p>-->
+      <!--</div>-->
+
+
+    <!--<div class="header">-->
+    <!--    <div class="logo">-->
+    <!--        <img src="/static/app001/images/logo.jpg" alt="logo" title="logo"/>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div class='current_user'>-->
+
+
+    <!--<div class='row'>-->
+    <!--      當前用戶: {{ current_user }} &nbsp;&nbsp;&nbsp;<a href="/app001/logout">登出</a>&nbsp;&nbsp;&nbsp;<a target='_blank'href="/admin">編輯資料</a>-->
+    <!--</div>    -->
+    <!--</div>    -->
+    
+    <div class='xxxpage_title'>
+        <!--<h1>-->
+            <a class='btn btn-primary' href='/'>Portal</a> 
+            <button class="button  btn-primary btn-lg" href='#' disabled='disabled'> {{ page_title }}</button>
+   
+        <!--</h1>-->
+    </div>
+    <div class='page_data'>
+        {% block content %}
+        {% endblock %}
+    </div>
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="{% static "app001/dist-bootstrap-jquery/jquery/jquery.min.js" %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+   <script src="{% static "app001/dist-bootstrap-jquery/js/bootstrap.min.js" %}"></script>
+    
+   </body>
+
+
+
+

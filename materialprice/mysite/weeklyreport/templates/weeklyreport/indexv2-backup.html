@@ -1,0 +1,41 @@
+{% extends 'weeklyreport/base.html' %}
+
+
+{% block content %}
+
+{% for sub in subtotal %}
+
+ <h2>{{ sub.reportdate }} &nbsp; 共{{ sub.rptcnt }}筆</h2>
+{% endfor %}
+<h1>xxx===</h1>
+
+
+
+
+
+{% for item in item_list %}
+{% if item.reportnum == 1 %}
+
+<h2>{{ item.reportdate }}&nbsp;</h2>
+
+<h3>debug:{{ subtotal}}</h3>
+<hr>
+{% for q in subtotal %}
+{% if q.reportdate == item.reportdate %}
+<h3>hacking ...{{ q.reportdate}}</h3>
+{% endif %}
+<h3>{{ q.reportdate}}</h3>
+{% endfor %}
+<hr>
+{% endif %}
+
+
+({{ item.reportnum }})&nbsp;
+
+{{ item.description }}<br><br>
+<!-- <hr> -->
+
+
+{% endfor %}
+
+{% endblock %}

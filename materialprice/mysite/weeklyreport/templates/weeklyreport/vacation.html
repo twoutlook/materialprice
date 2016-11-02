@@ -1,0 +1,50 @@
+{% extends 'weeklyreport/base.html' %}
+
+
+{% block content %}
+
+<h2>Index</h2>
+<ul>
+{% for name in name_list %}
+
+  <li>{{ name.fullname }} </li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+{% for item in item_list %}
+    {% if item.vacationnum == 1 %}
+        <hr>
+        <h2>&nbsp;{{ item.fullname  }} &nbsp;&nbsp;</h2>
+
+        {% for name in name_list %}
+            {% ifnotequal  name.fullname|stringformat:"s"  item.fullname|stringformat:"s"  %}
+
+      <!-- {{ name.fullname }} <>{{ item.fullname }} <br> -->
+            {% else %}
+      <!-- <h1>{{ name.fullname }} == {{ item.fullname }}</hi><br> -->
+                &nbsp;{{ name.fullname }}&nbsp;&nbsp;報到日期︰{{ name.firstdate |date:"Y-m-d"}}<br>
+            {% endifnotequal %}
+
+        {% endfor %}
+
+
+    {% endif %}
+
+
+    【{{ item.vacationnum }}】&nbsp;
+
+    {{ item.vacationfrom|date:"Y-m-d"  }}&nbsp;
+
+
+        至&nbsp;{{ item.vacationto|date:"Y-m-d"  }}&nbsp;
+
+    {{ item.vacationstatus  }}<br>
+
+{% endfor %}
+
+{% endblock %}

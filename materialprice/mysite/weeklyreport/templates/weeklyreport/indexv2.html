@@ -1,0 +1,35 @@
+{% extends 'weeklyreport/base.html' %}
+
+
+{% block content %}
+
+<h2>Index</h2>
+<ul>
+{% for sub in subtotal %}
+
+  <li>{{ sub.reportdate }} &nbsp; 共{{ sub.rptcnt }}筆</li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+{% for item in item_list %}
+{% if item.reportnum == 1 %}
+<hr>
+<h2>{{ item.reportdate|date:"Y-m-d"  }} 回報&nbsp;</h2>
+
+{% endif %}
+
+
+({{ item.reportnum }})&nbsp;
+
+{{ item.description }}<br><br>
+<!-- <hr> -->
+
+
+{% endfor %}
+
+{% endblock %}
