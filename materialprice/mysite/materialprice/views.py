@@ -1,5 +1,13 @@
 from django.shortcuts import render
+
+
+# PART 1 OF 2
 from .models import Materialprice
+from .models import Purchaseorder
+from .models import Receiving
+from django.db.models import Count, Min, Sum, Avg
+
+# PART 2 OF 2
 # Create your views here.
 def index(request):
     # if not request.user.is_authenticated:
@@ -11,6 +19,23 @@ def index(request):
     context = {'current_user':request.user,'page_title':'Material Price','item_list': item_list}
     return render(request, 'materialprice/index.html', context)
 
-# Designation
-# 名称；指定；称号；选定
-# 网络命名；指示；牌号
+def po(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    item_list = Purchaseorder.objects.order_by('vendor', 'podate', 'part')[:3000]
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'Material Price','item_list': item_list}
+    return render(request, 'materialprice/po.html', context)
+def receiving(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    item_list = Receiving.objects.order_by('FO', 'FC', 'FE', 'FF')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    subtotal=Receiving.objects.values('FO','FC','FE').annotate(sumFI=Sum('FI'), avgFJ=Avg('FJ'),sumFL=Sum('FL'),avgMo=Sum('FL')/Sum('FI'),countFG=Count('FG'))
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'RR','item_list': item_list,'subtotal': subtotal}
+    return render(request, 'materialprice/receiving.html', context)

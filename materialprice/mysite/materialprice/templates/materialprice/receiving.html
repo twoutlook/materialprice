@@ -1,0 +1,85 @@
+{% extends 'materialprice/base.html' %}
+
+
+{% block content %}
+
+<!-- <h1>zzz PO</h1> -->
+<table>
+<tr>
+  <th> 年月份</td>
+  <th> 业务伙伴</td>
+  <th>品名</td>
+  <th> 收货数量合</td>
+  <th> 未税金额合</td>
+    <th> 當月平均單價</td>
+      <th> 筆數</td>
+
+  </tr>
+{% for x in subtotal %}
+  <tr>
+    <td>  {{ x.FO}}</td>
+    <td>  {{ x.FC}}</td>
+    <td>  {{ x.FE}}</td>
+    <td>  {{ x.sumFI}}</td>
+    <!-- <td>  {{ x.avgFJ}}</td> -->
+    <td>  {{ x.sumFL}}</td>
+    <td>  {{ x.avgMo}}</td>
+    <td>  {{ x.countFG}}</td>
+
+
+  </tr>
+{% endfor %}
+</table>
+
+<hr>
+<table>
+  <tr>
+    <th>  供应商</td>
+    <th> 业务伙伴</td>
+    <th> 物料代码</td>
+    <th>品名</td>
+    <th> 进料日期</td>
+    <th> 收料单号</td>
+    <th> 单位</td>
+    <th> 收货数量</td>
+    <th> 未税单价</td>
+    <th> 未税金额</td>
+    <th> 年月份</td>
+
+  </tr>
+{% for item in item_list %}
+
+    <tr>
+      <td>  {{ item.FB}}</td>
+      <td align='center'>  {{ item.FC}}</td>
+      <td align='center'>  {{ item.FD}}</td>
+      <td align='center'>  {{ item.FE}}</td>
+      <td>  {{ item.FF |date:"Y-m-d"}}</td>
+      <td>  {{ item.FG}}</td>
+      <td>  {{ item.FH}}</td>
+      <td>  {{ item.FI}}</td>
+      <!-- <td>  {{ item.FJ}}</td> -->
+      <td>  {{ item.FK}}</td>
+      <td>  {{ item.FL}}</td>
+      <!-- <td>  {{ item.FM}}</td> -->
+      <!-- <td>  {{ item.FN}}</td> -->
+      <td>  {{ item.FO}}</td>
+    </tr>
+
+
+{% endfor %}
+</table>
+
+<!-- <h1> debug...</h1>
+{% for item in item_list %}
+      {{ item.vendor}}&nbsp;
+      {{ item.podate |date:"Y-m-d"}}&nbsp;
+      {{ item.part  }}
+      {{ item.spec  }}
+      {{ item.qty  }}
+      {{ item.unit  }}
+      {{ item.price  }}
+    <br>
+{% endfor %} -->
+
+{% endblock %}

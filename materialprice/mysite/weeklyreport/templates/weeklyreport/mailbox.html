@@ -2,7 +2,22 @@
 
 
 {% block content %}
+<h1>LIST STYLE 001</h1>
+{% for item in item_list %}
 
+
+<!-- {{ item.fullname  }}&nbsp; -->
+{{ item.fullname  }}<br>
+
+{{ item.mailbox1  }}<br>
+
+{% if item.mailbox4 == None %}
+(無)<br>
+{% else %}
+   {{ item.mailbox4  }}<br>
+{% endif %}
+<br>
+{% endfor %}
 
 
 {% for item in item_list %}

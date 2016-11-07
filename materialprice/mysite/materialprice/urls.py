@@ -10,7 +10,10 @@ urlpatterns = [
     # url(r'^mailbox', views.mailbox, name='mailbox'),
     # url(r'^v2', views.indexv2, name='indexv2'),
     # url(r'^$', views.index, name='index'),
+    url(r'^receiving', views.receiving, name='receiving'),
+    url(r'^po', views.po, name='po'),
     url(r'^', views.index, name='index'),
+
 # url(r'^style19/(?P<setnum>[0-9]+)/(?P<movenum>[0-9]+)', views.style19detail2, name='style19detail2'),
 
 
