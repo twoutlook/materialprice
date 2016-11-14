@@ -1,0 +1,14 @@
+﻿SELECT FO FROM materialprice_receiving WHERE FO='1月';
+
+UPDATE materialprice_receiving SET FO = '2016-01' WHERE FO='1月';
+UPDATE materialprice_receiving SET FO = '2016-02' WHERE FO='2月';
+UPDATE materialprice_receiving SET FO = '2016-03' WHERE FO='3月';
+UPDATE materialprice_receiving SET FO = '2016-04' WHERE FO='4月';
+UPDATE materialprice_receiving SET FO = '2016-05' WHERE FO='5月';
+UPDATE materialprice_receiving SET FO = '2016-06' WHERE FO='6月';
+UPDATE materialprice_receiving SET FO = '2016-07' WHERE FO='7月';
+UPDATE materialprice_receiving SET FO = '2016-08' WHERE FO='8月';
+UPDATE materialprice_receiving SET FO = '2016-09' WHERE FO='9月';
+UPDATE materialprice_receiving SET FO = '2016-10' WHERE FO='10月';
+
+

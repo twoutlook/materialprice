@@ -1,0 +1,7 @@
+﻿
+Google API Maps
+AIzaSyBIC0MAn4cTlqOcKPlRE-CnNEPmf-Z2xno
+
+
+XAMPP PHP7
+https://www.apachefriends.org/xampp-files/7.0.9/xampp-win32-7.0.9-1-VC14-installer.exe

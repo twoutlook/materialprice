@@ -1,5 +1,13 @@
 from django.shortcuts import render
 
+# 公司现开通上海有色网会员，本次有效期为一年。
+#    网站：www.smm.cn       帐户：fulltech        密码：skyrock
+
+'''
+3#：良好的流动性和机械性能。应用于对机械强度要求不高的铸件，如玩具、灯具、装饰品、部分电器件。
+5#：良好的流动性和好的机械性能。应用于对机械强度有一定要求的铸件，如汽车配件、机电配件、机械零件、电器元件。
+总的来说，3号比5号要软一点。
+'''
 
 # PART 1 OF 2
 from .models import Materialprice
