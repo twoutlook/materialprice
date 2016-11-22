@@ -1,0 +1,322 @@
+Oct 27 09:50:27 localhost postfix/postfix-script[2394]: starting the Postfix mail system
+Oct 27 09:50:28 localhost postfix/master[2396]: daemon started -- version 2.10.1, configuration /etc/postfix
+Oct 27 09:51:34 chttl-be0e16968f164b9d postfix/postfix-script[1715]: starting the Postfix mail system
+Oct 27 09:51:34 chttl-be0e16968f164b9d postfix/master[1723]: daemon started -- version 2.10.1, configuration /etc/postfix
+Oct 27 09:58:17 chttl-be0e16968f164b9d postfix/postfix-script[2025]: starting the Postfix mail system
+Oct 27 09:58:17 chttl-be0e16968f164b9d postfix/master[2044]: daemon started -- version 2.10.1, configuration /etc/postfix
+Oct 27 10:02:15 chttl-be0e16968f164b9d postfix/postfix-script[2541]: stopping the Postfix mail system
+Oct 27 10:02:15 chttl-be0e16968f164b9d postfix/master[2044]: terminating on signal 15
+Oct 27 13:55:49 zimbra zmmailboxdmgr[27164]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:55:49 zimbra zmmailboxdmgr[27164]: assuming no other instance is running
+Oct 27 13:55:49 zimbra zmmailboxdmgr[27164]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:55:49 zimbra zmmailboxdmgr[27164]: assuming no other instance is running
+Oct 27 13:55:49 zimbra zmmailboxdmgr[27164]: no manager process is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27213]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27213]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27213]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27213]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27213]: no manager process is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27237]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27237]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27237]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27237]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27237]: no manager process is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27261]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27261]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27261]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27261]: assuming no other instance is running
+Oct 27 13:55:51 zimbra zmmailboxdmgr[27261]: no manager process is running
+Oct 27 13:55:52 zimbra postfix/postfix-script[27322]: fatal: the Postfix mail system is not running
+Oct 27 13:55:58 zimbra zmmailboxdmgr[27586]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:55:58 zimbra zmmailboxdmgr[27586]: assuming no other instance is running
+Oct 27 13:55:58 zimbra zmmailboxdmgr[27586]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:55:58 zimbra zmmailboxdmgr[27586]: assuming no other instance is running
+Oct 27 13:55:58 zimbra zmmailboxdmgr[27586]: no manager process is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29204]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29204]: assuming no other instance is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29204]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29204]: assuming no other instance is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29204]: no manager process is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: start requested
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: checking if another instance of manager is already running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: assuming no other instance is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29215]: assuming no other instance is running
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29216]: wrote manager pid 29216 to /opt/zimbra/log/zmmailboxd_manager.pid
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29216]: manager started mailboxd/JVM with pid 29217
+Oct 27 13:56:49 zimbra zmmailboxdmgr[29217]: wrote java pid 29217 to /opt/zimbra/log/zmmailboxd_java.pid
+Oct 27 13:57:23 zimbra amavis-mc[29470]: amavis master process starting. daemonized as PID [29470], perl 5.016003
+Oct 27 13:57:23 zimbra amavis-mc[29470]: Process [29471] started: /opt/zimbra/common/sbin/amavis-services msg-forwarder
+Oct 27 13:57:23 zimbra amavis-mc[29470]: Process [29472] started: /opt/zimbra/common/sbin/amavis-services childproc-minder
+Oct 27 13:57:23 zimbra amavis-mc[29470]: Process [29473] started: /opt/zimbra/common/sbin/amavis-services snmp-responder
+Oct 27 13:57:24 zimbra amavis-services[29473]: amavis-services-2.9.0 (20140506) task 'snmp-responder' [29473] started. ZMQ::LibZMQ3 1.19, lib 4.1.4
+Oct 27 13:57:24 zimbra amavis-services[29472]: amavis-services-2.9.0 (20140506) task 'childproc-minder' [29472] started. ZMQ::LibZMQ3 1.19, lib 4.1.4
+Oct 27 13:57:24 zimbra amavis-services[29471]: amavis-services-2.9.0 (20140506) task 'msg-forwarder' [29471] started. ZMQ::LibZMQ3 1.19, lib 4.1.4
+Oct 27 13:57:25 zimbra amavis-services[29472]: childproc_minder: FLUSH process states
+Oct 27 13:57:31 zimbra amavis-services[29473]: snmp_responder: FLUSH snmp data
+Oct 27 13:57:31 zimbra amavis-services[29472]: childproc_minder: FLUSH process states
+Oct 27 13:58:14 zimbra /postfix-script[30439]: starting the Postfix mail system
+Oct 27 13:58:14 zimbra postfix/master[30441]: daemon started -- version 3.1.1, configuration /opt/zimbra/common/conf
+Oct 27 13:59:17 zimbra postfix/pickup[30442]: 3B31A4A1080: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:18 zimbra postfix/cleanup[32566]: 3B31A4A1080: message-id=<20161027055917.3B31A4A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:18 zimbra postfix/qmgr[30443]: 3B31A4A1080: from=<admin@fulltech-metal.net>, size=499, nrcpt=1 (queue active)
+Oct 27 13:59:20 zimbra postfix/pickup[30442]: 4F1504A1081: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:20 zimbra postfix/amavisd/smtpd[32659]: connect from localhost[127.0.0.1]
+Oct 27 13:59:20 zimbra postfix/cleanup[32566]: 4F1504A1081: message-id=<20161027055920.4F1504A1081@zimbra.fulltech-metal.net>
+Oct 27 13:59:20 zimbra postfix/qmgr[30443]: 4F1504A1081: from=<admin@fulltech-metal.net>, size=486, nrcpt=1 (queue active)
+Oct 27 13:59:20 zimbra postfix/amavisd/smtpd[32659]: 51A634A1082: client=localhost[127.0.0.1]
+Oct 27 13:59:20 zimbra postfix/cleanup[32566]: 51A634A1082: message-id=<20161027055917.3B31A4A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:20 zimbra postfix/qmgr[30443]: 51A634A1082: from=<admin@fulltech-metal.net>, size=1138, nrcpt=1 (queue active)
+Oct 27 13:59:20 zimbra postfix/smtp[32609]: 3B31A4A1080: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=3.4, delays=1.2/0.08/0.01/2.1, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 51A634A1082)
+Oct 27 13:59:20 zimbra postfix/qmgr[30443]: 3B31A4A1080: removed
+Oct 27 13:59:20 zimbra postfix/pickup[30442]: 7F37B4A1080: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:20 zimbra postfix/cleanup[32566]: 7F37B4A1080: message-id=<20161027055920.7F37B4A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:20 zimbra postfix/qmgr[30443]: 7F37B4A1080: from=<admin@fulltech-metal.net>, size=497, nrcpt=1 (queue active)
+Oct 27 13:59:21 zimbra postfix/pickup[30442]: 97C3F4A1083: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:21 zimbra postfix/cleanup[32566]: 97C3F4A1083: message-id=<20161027055921.97C3F4A1083@zimbra.fulltech-metal.net>
+Oct 27 13:59:21 zimbra postfix/amavisd/smtpd[32675]: connect from localhost[127.0.0.1]
+Oct 27 13:59:21 zimbra postfix/qmgr[30443]: 97C3F4A1083: from=<admin@fulltech-metal.net>, size=488, nrcpt=1 (queue active)
+Oct 27 13:59:21 zimbra postfix/amavisd/smtpd[32675]: B2C894A1084: client=localhost[127.0.0.1]
+Oct 27 13:59:21 zimbra postfix/cleanup[32566]: B2C894A1084: message-id=<20161027055920.7F37B4A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:21 zimbra postfix/amavisd/smtpd[32678]: connect from localhost[127.0.0.1]
+Oct 27 13:59:21 zimbra postfix/qmgr[30443]: B2C894A1084: from=<admin@fulltech-metal.net>, size=1136, nrcpt=1 (queue active)
+Oct 27 13:59:21 zimbra postfix/smtp[32663]: 7F37B4A1080: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=1.3, delays=0.14/0.01/0.39/0.8, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as B2C894A1084)
+Oct 27 13:59:21 zimbra postfix/qmgr[30443]: 7F37B4A1080: removed
+Oct 27 13:59:22 zimbra postfix/pickup[30442]: 17AA14A1080: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/amavisd/smtpd[32678]: 1E7A54A1085: client=localhost[127.0.0.1]
+Oct 27 13:59:22 zimbra postfix/cleanup[32697]: 1E7A54A1085: message-id=<20161027055920.4F1504A1081@zimbra.fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/cleanup[32566]: 17AA14A1080: message-id=<20161027055922.17AA14A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: 1E7A54A1085: from=<admin@fulltech-metal.net>, size=1125, nrcpt=1 (queue active)
+Oct 27 13:59:22 zimbra postfix/smtp[32609]: 4F1504A1081: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=1.9, delays=0.06/0.04/0.58/1.2, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 1E7A54A1085)
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: 4F1504A1081: removed
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: 17AA14A1080: from=<admin@fulltech-metal.net>, size=488, nrcpt=1 (queue active)
+Oct 27 13:59:22 zimbra postfix/pickup[30442]: 2B4F04A1081: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/cleanup[32697]: 2B4F04A1081: message-id=<20161027055922.2B4F04A1081@zimbra.fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: 2B4F04A1081: from=<admin@fulltech-metal.net>, size=490, nrcpt=1 (queue active)
+Oct 27 13:59:22 zimbra postfix/amavisd/smtpd[32675]: D08ED4A1086: client=localhost[127.0.0.1]
+Oct 27 13:59:22 zimbra postfix/cleanup[32566]: D08ED4A1086: message-id=<20161027055922.17AA14A1080@zimbra.fulltech-metal.net>
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: D08ED4A1086: from=<admin@fulltech-metal.net>, size=1127, nrcpt=1 (queue active)
+Oct 27 13:59:22 zimbra postfix/smtp[32663]: 17AA14A1080: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, conn_use=2, delay=1.1, delays=0.42/0/0/0.7, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as D08ED4A1086)
+Oct 27 13:59:22 zimbra postfix/qmgr[30443]: 17AA14A1080: removed
+Oct 27 13:59:22 zimbra postfix/amavisd/smtpd[32678]: E1F7B4A1080: client=localhost[127.0.0.1]
+Oct 27 13:59:23 zimbra postfix/cleanup[32697]: E1F7B4A1080: message-id=<20161027055922.2B4F04A1081@zimbra.fulltech-metal.net>
+Oct 27 13:59:23 zimbra postfix/qmgr[30443]: E1F7B4A1080: from=<admin@fulltech-metal.net>, size=1129, nrcpt=1 (queue active)
+Oct 27 13:59:23 zimbra postfix/smtp[32609]: 2B4F04A1081: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, conn_use=2, delay=0.97, delays=0.3/0/0/0.67, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as E1F7B4A1080)
+Oct 27 13:59:23 zimbra postfix/qmgr[30443]: 2B4F04A1081: removed
+Oct 27 13:59:23 zimbra postfix/amavisd/smtpd[32731]: connect from localhost[127.0.0.1]
+Oct 27 13:59:23 zimbra postfix/amavisd/smtpd[32731]: 2337E4A1081: client=localhost[127.0.0.1]
+Oct 27 13:59:23 zimbra postfix/cleanup[32566]: 2337E4A1081: message-id=<20161027055921.97C3F4A1083@zimbra.fulltech-metal.net>
+Oct 27 13:59:23 zimbra postfix/smtp[32680]: 97C3F4A1083: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=1.7, delays=0.23/0.01/0.03/1.4, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 2337E4A1081)
+Oct 27 13:59:23 zimbra postfix/qmgr[30443]: 2337E4A1081: from=<admin@fulltech-metal.net>, size=1127, nrcpt=1 (queue active)
+Oct 27 13:59:23 zimbra postfix/qmgr[30443]: 97C3F4A1083: removed
+Oct 27 13:59:23 zimbra postfix/pickup[30442]: D6CE34A1083: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 13:59:23 zimbra postfix/cleanup[32697]: D6CE34A1083: message-id=<20161027055923.D6CE34A1083@zimbra.fulltech-metal.net>
+Oct 27 13:59:23 zimbra postfix/qmgr[30443]: D6CE34A1083: from=<admin@fulltech-metal.net>, size=490, nrcpt=1 (queue active)
+Oct 27 13:59:24 zimbra postfix/amavisd/smtpd[32659]: 923F34A1087: client=localhost[127.0.0.1]
+Oct 27 13:59:24 zimbra postfix/cleanup[32566]: 923F34A1087: message-id=<20161027055923.D6CE34A1083@zimbra.fulltech-metal.net>
+Oct 27 13:59:24 zimbra postfix/qmgr[30443]: 923F34A1087: from=<admin@fulltech-metal.net>, size=1129, nrcpt=1 (queue active)
+Oct 27 13:59:24 zimbra postfix/smtp[32663]: D6CE34A1083: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=0.81, delays=0.07/0/0/0.74, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 923F34A1087)
+Oct 27 13:59:24 zimbra postfix/qmgr[30443]: D6CE34A1083: removed
+Oct 27 13:59:32 zimbra postfix/lmtp[32664]: 51A634A1082: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=12, delays=0.03/0.06/0.92/11, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:32 zimbra postfix/qmgr[30443]: 51A634A1082: removed
+Oct 27 13:59:32 zimbra postfix/lmtp[32730]: E1F7B4A1080: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=9.2, delays=0.19/0.04/0.41/8.6, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:32 zimbra postfix/qmgr[30443]: E1F7B4A1080: removed
+Oct 27 13:59:32 zimbra postfix/lmtp[32727]: D08ED4A1086: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=9.3, delays=0.01/0.04/0.34/9, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:32 zimbra postfix/qmgr[30443]: D08ED4A1086: removed
+Oct 27 13:59:33 zimbra postfix/lmtp[32702]: 1E7A54A1085: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=11, delays=0.03/0.03/1.1/9.8, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:33 zimbra postfix/qmgr[30443]: 1E7A54A1085: removed
+Oct 27 13:59:33 zimbra postfix/lmtp[32688]: B2C894A1084: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=11, delays=0.01/0.36/1.1/9.8, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:33 zimbra postfix/qmgr[30443]: B2C894A1084: removed
+Oct 27 13:59:33 zimbra postfix/lmtp[32664]: 2337E4A1081: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=9.9, delays=0.02/9/0.33/0.59, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:33 zimbra postfix/qmgr[30443]: 2337E4A1081: removed
+Oct 27 13:59:33 zimbra postfix/lmtp[387]: 923F34A1087: to=<admin@fulltech-metal.net>, relay=zimbra.fulltech-metal.net[203.66.83.217]:7025, delay=8.5, delays=0.04/7.5/0.32/0.63, dsn=2.1.5, status=sent (250 2.1.5 Delivery OK)
+Oct 27 13:59:33 zimbra postfix/qmgr[30443]: 923F34A1087: removed
+Oct 27 14:01:03 zimbra zmmailboxdmgr[2097]: stop requested
+Oct 27 14:01:03 zimbra zmmailboxdmgr[2097]: waiting for manager process 29216 to die
+Oct 27 14:01:03 zimbra zmmailboxdmgr[29216]: shutdown requested, sending TERM signal to 29217
+Oct 27 14:01:04 zimbra zmmailboxdmgr[29216]: mailboxd/JVM process exited (waitpid expected 29217 got 29217)
+Oct 27 14:01:04 zimbra zmmailboxdmgr[29216]: manager woke up from wait on mailboxd/JVM with pid 29217
+Oct 27 14:01:05 zimbra zmmailboxdmgr[2097]: manager process 29216 died, shutdown completed
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2536]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2536]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2536]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2536]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2536]: no manager process is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2551]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2551]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2551]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2551]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2551]: no manager process is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2605]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2605]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2605]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2605]: assuming no other instance is running
+Oct 27 14:01:37 zimbra zmmailboxdmgr[2605]: no manager process is running
+Oct 27 14:01:37 zimbra postfix/pickup[30442]: EB6484A2481: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:37 zimbra postfix/cleanup[2636]: EB6484A2481: message-id=<20161027060137.EB6484A2481@zimbra.fulltech-metal.net>
+Oct 27 14:01:37 zimbra postfix/qmgr[30443]: EB6484A2481: from=<admin@fulltech-metal.net>, size=495, nrcpt=1 (queue active)
+Oct 27 14:01:38 zimbra postfix/pickup[30442]: 1EDA84A1655: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:38 zimbra postfix/cleanup[2636]: 1EDA84A1655: message-id=<20161027060138.1EDA84A1655@zimbra.fulltech-metal.net>
+Oct 27 14:01:38 zimbra postfix/qmgr[30443]: 1EDA84A1655: from=<admin@fulltech-metal.net>, size=497, nrcpt=1 (queue active)
+Oct 27 14:01:38 zimbra postfix/pickup[30442]: 6CD774A2482: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:38 zimbra postfix/cleanup[2636]: 6CD774A2482: message-id=<20161027060138.6CD774A2482@zimbra.fulltech-metal.net>
+Oct 27 14:01:38 zimbra postfix/qmgr[30443]: 6CD774A2482: from=<admin@fulltech-metal.net>, size=495, nrcpt=1 (queue active)
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2682]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2682]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2682]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2682]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2682]: no manager process is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2697]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2697]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2697]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2697]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2697]: no manager process is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2713]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2713]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2713]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2713]: assuming no other instance is running
+Oct 27 14:01:40 zimbra zmmailboxdmgr[2713]: no manager process is running
+Oct 27 14:01:40 zimbra postfix/pickup[30442]: 7511E4A2485: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:40 zimbra postfix/cleanup[2636]: 7511E4A2485: message-id=<20161027060140.7511E4A2485@zimbra.fulltech-metal.net>
+Oct 27 14:01:40 zimbra postfix/qmgr[30443]: 7511E4A2485: from=<admin@fulltech-metal.net>, size=493, nrcpt=1 (queue active)
+Oct 27 14:01:40 zimbra postfix/pickup[30442]: 7CD164A2484: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:40 zimbra postfix/cleanup[2636]: 7CD164A2484: message-id=<20161027060140.7CD164A2484@zimbra.fulltech-metal.net>
+Oct 27 14:01:40 zimbra postfix/qmgr[30443]: 7CD164A2484: from=<admin@fulltech-metal.net>, size=503, nrcpt=1 (queue active)
+Oct 27 14:01:40 zimbra postfix/pickup[30442]: CEE114A2487: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:01:41 zimbra postfix/cleanup[2636]: CEE114A2487: message-id=<20161027060140.CEE114A2487@zimbra.fulltech-metal.net>
+Oct 27 14:01:41 zimbra postfix/qmgr[30443]: CEE114A2487: from=<admin@fulltech-metal.net>, size=493, nrcpt=1 (queue active)
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2742]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2742]: assuming no other instance is running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2742]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2742]: assuming no other instance is running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2742]: no manager process is running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: start requested
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: checking if another instance of manager is already running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: file /opt/zimbra/log/zmmailboxd_manager.pid does not exist
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: assuming no other instance is running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: file /opt/zimbra/log/zmmailboxd.pid does not exist
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2753]: assuming no other instance is running
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2754]: wrote manager pid 2754 to /opt/zimbra/log/zmmailboxd_manager.pid
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2754]: manager started mailboxd/JVM with pid 2757
+Oct 27 14:01:41 zimbra zmmailboxdmgr[2757]: wrote java pid 2757 to /opt/zimbra/log/zmmailboxd_java.pid
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[2808]: connect from localhost[127.0.0.1]
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[2808]: 635404A248A: client=localhost[127.0.0.1]
+Oct 27 14:01:43 zimbra postfix/cleanup[2636]: 635404A248A: message-id=<20161027060137.EB6484A2481@zimbra.fulltech-metal.net>
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: 635404A248A: from=<admin@fulltech-metal.net>, size=1134, nrcpt=1 (queue active)
+Oct 27 14:01:43 zimbra postfix/smtp[2641]: EB6484A2481: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=5.7, delays=0.12/0.42/0.03/5.1, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 635404A248A)
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: EB6484A2481: removed
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[32659]: 8C5394A2486: client=localhost[127.0.0.1]
+Oct 27 14:01:43 zimbra postfix/cleanup[2636]: 8C5394A2486: message-id=<20161027060138.6CD774A2482@zimbra.fulltech-metal.net>
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: 8C5394A2486: from=<admin@fulltech-metal.net>, size=1134, nrcpt=1 (queue active)
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[32659]: disconnect from localhost[127.0.0.1] ehlo=1 mail=3 rcpt=3 data=3 noop=1 quit=1 commands=12
+Oct 27 14:01:43 zimbra postfix/lmtp[2809]: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused
+Oct 27 14:01:43 zimbra postfix/lmtp[2810]: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused
+Oct 27 14:01:43 zimbra postfix/smtp[2665]: 6CD774A2482: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=5.3, delays=0.12/0.02/0/5.2, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 8C5394A2486)
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: 6CD774A2482: removed
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[32659]: connect from localhost[127.0.0.1]
+Oct 27 14:01:43 zimbra postfix/amavisd/smtpd[32659]: CADD64A2481: client=localhost[127.0.0.1]
+Oct 27 14:01:43 zimbra postfix/cleanup[2636]: CADD64A2481: message-id=<20161027060138.1EDA84A1655@zimbra.fulltech-metal.net>
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: CADD64A2481: from=<admin@fulltech-metal.net>, size=1144, nrcpt=1 (queue active)
+Oct 27 14:01:43 zimbra postfix/smtp[2657]: 1EDA84A1655: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=5.9, delays=0.12/0.22/0.01/5.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as CADD64A2481)
+Oct 27 14:01:43 zimbra postfix/qmgr[30443]: 1EDA84A1655: removed
+Oct 27 14:01:43 zimbra postfix/lmtp[2809]: 635404A248A: to=<admin@fulltech-metal.net>, relay=none, delay=0.33, delays=0.02/0.3/0.01/0, dsn=4.4.1, status=deferred (connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:01:43 zimbra postfix/lmtp[2810]: 8C5394A2486: to=<admin@fulltech-metal.net>, relay=none, delay=0.16, delays=0.14/0.02/0/0, dsn=4.4.1, status=deferred (connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:01:44 zimbra postfix/lmtp[2809]: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused
+Oct 27 14:01:44 zimbra postfix/lmtp[2809]: CADD64A2481: to=<admin@fulltech-metal.net>, relay=none, delay=0.35, delays=0.03/0.13/0.19/0, dsn=4.4.1, status=deferred (connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32675]: 08EB84A1655: client=localhost[127.0.0.1]
+Oct 27 14:01:45 zimbra postfix/cleanup[2636]: 08EB84A1655: message-id=<20161027060140.7511E4A2485@zimbra.fulltech-metal.net>
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: 08EB84A1655: from=<admin@fulltech-metal.net>, size=1132, nrcpt=1 (queue active)
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32675]: disconnect from localhost[127.0.0.1] ehlo=1 mail=3 rcpt=3 data=3 noop=1 quit=1 commands=12
+Oct 27 14:01:45 zimbra postfix/smtp[2725]: 7511E4A2485: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.6, delays=0.04/0.01/0/4.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 08EB84A1655)
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: 7511E4A2485: removed
+Oct 27 14:01:45 zimbra postfix/error[2826]: 08EB84A1655: to=<admin@fulltech-metal.net>, relay=none, delay=0.09, delays=0/0.06/0/0.03, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32731]: 249724A2485: client=localhost[127.0.0.1]
+Oct 27 14:01:45 zimbra postfix/cleanup[2636]: 249724A2485: message-id=<20161027060140.CEE114A2487@zimbra.fulltech-metal.net>
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32731]: disconnect from localhost[127.0.0.1] ehlo=1 mail=2 rcpt=2 data=2 noop=1 quit=1 commands=9
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32678]: 268704A248F: client=localhost[127.0.0.1]
+Oct 27 14:01:45 zimbra postfix/smtp[2641]: CEE114A2487: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.4, delays=0.53/2.3/0/1.6, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 249724A2485)
+Oct 27 14:01:45 zimbra postfix/cleanup[2636]: 268704A248F: message-id=<20161027060140.7CD164A2484@zimbra.fulltech-metal.net>
+Oct 27 14:01:45 zimbra postfix/amavisd/smtpd[32678]: disconnect from localhost[127.0.0.1] ehlo=1 mail=3 rcpt=3 data=3 noop=1 quit=1 commands=12
+Oct 27 14:01:45 zimbra postfix/smtp[2729]: 7CD164A2484: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.7, delays=0.25/0.03/0.23/4.2, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 268704A248F)
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: 7CD164A2484: removed
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: 249724A2485: from=<admin@fulltech-metal.net>, size=1140, nrcpt=1 (queue active)
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: 268704A248F: from=<admin@fulltech-metal.net>, size=1142, nrcpt=1 (queue active)
+Oct 27 14:01:45 zimbra postfix/qmgr[30443]: CEE114A2487: removed
+Oct 27 14:01:45 zimbra postfix/error[2826]: 249724A2485: to=<admin@fulltech-metal.net>, relay=none, delay=0.12, delays=0.11/0/0/0.01, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:01:45 zimbra postfix/error[2828]: 268704A248F: to=<admin@fulltech-metal.net>, relay=none, delay=0.12, delays=0.1/0.01/0/0.01, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:46 zimbra postfix/pickup[30442]: C0C034A2490: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:46 zimbra postfix/cleanup[2636]: C0C034A2490: message-id=<20161027060246.C0C034A2490@zimbra.fulltech-metal.net>
+Oct 27 14:02:46 zimbra postfix/qmgr[30443]: C0C034A2490: from=<admin@fulltech-metal.net>, size=495, nrcpt=1 (queue active)
+Oct 27 14:02:47 zimbra postfix/pickup[30442]: 1AD754A2492: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/cleanup[2827]: 1AD754A2492: message-id=<20161027060247.1AD754A2492@zimbra.fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/qmgr[30443]: 1AD754A2492: from=<admin@fulltech-metal.net>, size=497, nrcpt=1 (queue active)
+Oct 27 14:02:47 zimbra postfix/pickup[30442]: 220244A2491: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/cleanup[2636]: 220244A2491: message-id=<20161027060247.220244A2491@zimbra.fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/qmgr[30443]: 220244A2491: from=<admin@fulltech-metal.net>, size=495, nrcpt=1 (queue active)
+Oct 27 14:02:47 zimbra postfix/pickup[30442]: 47B004A2494: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/cleanup[2827]: 47B004A2494: message-id=<20161027060247.47B004A2494@zimbra.fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/qmgr[30443]: 47B004A2494: from=<admin@fulltech-metal.net>, size=493, nrcpt=1 (queue active)
+Oct 27 14:02:47 zimbra postfix/pickup[30442]: 583014A2495: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/cleanup[2636]: 583014A2495: message-id=<20161027060247.583014A2495@zimbra.fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/qmgr[30443]: 583014A2495: from=<admin@fulltech-metal.net>, size=503, nrcpt=1 (queue active)
+Oct 27 14:02:47 zimbra postfix/pickup[30442]: 5EA424A2497: uid=994 from=<admin@fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/cleanup[2827]: 5EA424A2497: message-id=<20161027060247.5EA424A2497@zimbra.fulltech-metal.net>
+Oct 27 14:02:47 zimbra postfix/qmgr[30443]: 5EA424A2497: from=<admin@fulltech-metal.net>, size=493, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32675]: connect from localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32675]: 4FE564A2498: client=localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/cleanup[2636]: 4FE564A2498: message-id=<20161027060246.C0C034A2490@zimbra.fulltech-metal.net>
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: 4FE564A2498: from=<admin@fulltech-metal.net>, size=1134, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/smtp[2665]: C0C034A2490: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.6, delays=0.05/0/0.01/4.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 4FE564A2498)
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: C0C034A2490: removed
+Oct 27 14:02:51 zimbra postfix/error[2826]: 4FE564A2498: to=<admin@fulltech-metal.net>, relay=none, delay=0.01, delays=0/0.01/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: connect from localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: A799C4A249A: client=localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: connect from localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/cleanup[2827]: A799C4A249A: message-id=<20161027060247.1AD754A2492@zimbra.fulltech-metal.net>
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: A84224A249B: client=localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/cleanup[2636]: A84224A249B: message-id=<20161027060247.220244A2491@zimbra.fulltech-metal.net>
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: A799C4A249A: from=<admin@fulltech-metal.net>, size=1136, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: A84224A249B: from=<admin@fulltech-metal.net>, size=1142, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 27 14:02:51 zimbra postfix/smtp[2657]: 1AD754A2492: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.6, delays=0.03/0/0/4.6, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as A799C4A249A)
+Oct 27 14:02:51 zimbra postfix/smtp[2725]: 220244A2491: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.6, delays=0.02/0/0/4.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as A84224A249B)
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: 1AD754A2492: removed
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: 220244A2491: removed
+Oct 27 14:02:51 zimbra postfix/error[2826]: A84224A249B: to=<admin@fulltech-metal.net>, relay=none, delay=0.04, delays=0/0/0/0.03, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:51 zimbra postfix/error[2828]: A799C4A249A: to=<admin@fulltech-metal.net>, relay=none, delay=0.04, delays=0.01/0/0/0.03, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: connect from localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: C6D8D4A2492: client=localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/cleanup[2827]: C6D8D4A2492: message-id=<20161027060247.47B004A2494@zimbra.fulltech-metal.net>
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: C6D8D4A2492: from=<admin@fulltech-metal.net>, size=1132, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32731]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 27 14:02:51 zimbra postfix/smtp[2729]: 47B004A2494: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.6, delays=0.16/0/0/4.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as C6D8D4A2492)
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: 47B004A2494: removed
+Oct 27 14:02:51 zimbra postfix/error[2826]: C6D8D4A2492: to=<admin@fulltech-metal.net>, relay=none, delay=0.01, delays=0/0/0/0.01, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: connect from localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: CAEDD4A2494: client=localhost[127.0.0.1]
+Oct 27 14:02:51 zimbra postfix/cleanup[2636]: CAEDD4A2494: message-id=<20161027060247.583014A2495@zimbra.fulltech-metal.net>
+Oct 27 14:02:51 zimbra postfix/amavisd/smtpd[32678]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: CAEDD4A2494: from=<admin@fulltech-metal.net>, size=1142, nrcpt=1 (queue active)
+Oct 27 14:02:51 zimbra postfix/error[2828]: CAEDD4A2494: to=<admin@fulltech-metal.net>, relay=none, delay=0.01, delays=0/0/0/0, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:02:51 zimbra postfix/smtp[2641]: 583014A2495: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=4.5, delays=0.02/0/0/4.5, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as CAEDD4A2494)
+Oct 27 14:02:51 zimbra postfix/qmgr[30443]: 583014A2495: removed
+Oct 27 14:02:54 zimbra postfix/amavisd/smtpd[32731]: connect from localhost[127.0.0.1]
+Oct 27 14:02:54 zimbra postfix/amavisd/smtpd[32731]: 1C5414A2495: client=localhost[127.0.0.1]
+Oct 27 14:02:54 zimbra postfix/cleanup[2827]: 1C5414A2495: message-id=<20161027060247.5EA424A2497@zimbra.fulltech-metal.net>
+Oct 27 14:02:54 zimbra postfix/qmgr[30443]: 1C5414A2495: from=<admin@fulltech-metal.net>, size=1140, nrcpt=1 (queue active)
+Oct 27 14:02:54 zimbra postfix/smtp[2665]: 5EA424A2497: to=<admin@fulltech-metal.net>, relay=127.0.0.1[127.0.0.1]:10024, delay=6.7, delays=0.02/3.9/0.01/2.8, dsn=2.0.0, status=sent (250 2.0.0 from MTA(smtp:[127.0.0.1]:10025): 250 2.0.0 Ok: queued as 1C5414A2495)
+Oct 27 14:02:54 zimbra postfix/qmgr[30443]: 5EA424A2497: removed
+Oct 27 14:02:54 zimbra postfix/error[2826]: 1C5414A2495: to=<admin@fulltech-metal.net>, relay=none, delay=0.02, delays=0.01/0/0/0.01, dsn=4.4.1, status=deferred (delivery temporarily suspended: connect to zimbra.fulltech-metal.net[203.66.83.217]:7025: Connection refused)
+Oct 27 14:06:11 zimbra postfix/scache[32665]: statistics: start interval Oct 27 13:59:20
+Oct 27 14:06:11 zimbra postfix/scache[32665]: statistics: domain lookup hits=2 miss=8 success=20%
+Oct 27 14:06:11 zimbra postfix/scache[32665]: statistics: max simultaneous domains=1 addresses=1 connection=3
+Oct 27 14:06:43 zimbra postfix/amavisd/smtpd[2808]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Oct 27 14:06:43 zimbra postfix/amavisd/smtpd[2808]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4
+Oct 27 14:06:43 zimbra postfix/amavisd/smtpd[32659]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Oct 27 14:06:43 zimbra postfix/amavisd/smtpd[32659]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4
+Oct 27 14:07:51 zimbra postfix/amavisd/smtpd[32675]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Oct 27 14:07:51 zimbra postfix/amavisd/smtpd[32675]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4
+Oct 27 14:07:54 zimbra postfix/amavisd/smtpd[32731]: timeout after END-OF-MESSAGE from localhost[127.0.0.1]
+Oct 27 14:07:54 zimbra postfix/amavisd/smtpd[32731]: disconnect from localhost[127.0.0.1] ehlo=1 mail=1 rcpt=1 data=1 commands=4

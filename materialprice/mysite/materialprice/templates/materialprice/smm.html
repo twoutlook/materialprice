@@ -1,0 +1,103 @@
+{% extends 'materialprice/base.html' %}
+
+
+{% block content %}
+<h1>by Quarter</h1>
+<table>
+<tr>
+  <th> 牌號</td>
+  <th> 年</td>
+  <th>季度</td>
+    <th> 平均單價(KG)</td>
+
+  </tr>
+{% for x in byquarter %}
+  <tr>
+    <td>  {{ x.designation}}</td>
+    <td>  {{ x.yearnum}}</td>
+    <td>  {{ x.quarternum}}</td>
+    <td>  {{ x.avg|stringformat:".2f"}}</td>
+
+  </tr>
+{% endfor %}
+</table>
+<h1> Month 2016-11</h1>
+<table>
+<tr>
+  <th> 牌號</td>
+  <th> 年</td>
+  <th>月份</td>
+    <th> 平均單價(KG)</td>
+
+  </tr>
+{% for x in subtotal %}
+{% if x.monthnum == 11 %}
+
+  <tr>
+    <td>  {{ x.designation}}</td>
+    <td>  {{ x.yearnum}}</td>
+    <td align='center'>  {{ x.monthnum}}</td>
+    <td>  {{ x.avg|stringformat:".2f"}}</td>
+
+  </tr>
+  {% endif %}
+
+{% endfor %}
+</table>
+
+<h1>by Month</h1>
+<table>
+<tr>
+  <th> 牌號</td>
+  <th> 年</td>
+  <th>月份</td>
+    <th> 平均單價(KG)</td>
+
+  </tr>
+{% for x in subtotal %}
+  <tr>
+    <td>  {{ x.designation}}</td>
+    <td>  {{ x.yearnum}}</td>
+    <td align='center'>  {{ x.monthnum}}</td>
+    <td>  {{ x.avg|stringformat:".2f"}}</td>
+
+  </tr>
+{% endfor %}
+</table>
+<h1>by Day</h1>
+<hr>
+<table>
+  <tr>
+    <th>  牌號</td>
+    <th> 行情日期</td>
+    <th> 平均價(TON)</td>
+  </tr>
+{% for item in item_list %}
+
+    <tr>
+      <td>  {{ item.designation}}</td>
+      <td >  {{ item.pricedate}}</td>
+      <td>  {{ item.priceavg}}</td>
+      <!-- <td>  {{ item.yearnum}}</td>
+      <td>  {{ item.monthnum}}</td>
+      <td>  {{ item.quarternum}}</td>
+      <td>  {{ item.id}}</td> -->
+      </tr>
+
+
+{% endfor %}
+</table>
+
+<!-- <h1> debug...</h1>
+{% for item in item_list %}
+      {{ item.vendor}}&nbsp;
+      {{ item.podate |date:"Y-m-d"}}&nbsp;
+      {{ item.part  }}
+      {{ item.spec  }}
+      {{ item.qty  }}
+      {{ item.unit  }}
+      {{ item.price  }}
+    <br>
+{% endfor %} -->
+
+{% endblock %}

@@ -11,6 +11,7 @@ urlpatterns = [
     # url(r'^v2', views.indexv2, name='indexv2'),
     # url(r'^$', views.index, name='index'),
     url(r'^receiving', views.receiving, name='receiving'),
+    url(r'^smm', views.smm, name='smm'),
     url(r'^po', views.po, name='po'),
     url(r'^', views.index, name='index'),
 

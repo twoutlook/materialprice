@@ -9,6 +9,7 @@ from import_export.admin import ImportExportModelAdmin
 from  .models import Materialprice
 from  .models import Purchaseorder
 from  .models import Receiving
+from  .models import Smm
 
 
 
@@ -30,6 +31,9 @@ class PurchaseorderResource(resources.ModelResource):
 class ReceivingResource(resources.ModelResource):
     class Meta:
         model = Receiving
+class SmmResource(resources.ModelResource):
+    class Meta:
+        model = Smm
 
 #
 # PART 3 OF 3
@@ -51,7 +55,17 @@ class ReceivingAdmin(ImportExportModelAdmin):
     resource_class = ReceivingResource
 admin.site.register(Receiving,ReceivingAdmin)
 
-
+class SmmAdmin(ImportExportModelAdmin):
+    list_display=['designation','pricedate','priceavg','yearnum','monthnum','quarternum']
+    ordering = ['designation','pricedate']
+    resource_class = SmmResource
+admin.site.register(Smm,SmmAdmin)
+# designation = models.CharField(max_length=32,verbose_name="牌号")
+# pricedate = models.CharField(max_length=10,verbose_name="行情日期")
+# priceavg = models.DecimalField(max_digits=9, decimal_places=2,verbose_name="平均价")
+# yearnum = models.IntegerField(default=0, verbose_name="年")
+# monthnum = models.IntegerField(default=0, verbose_name="月")
+# quarternum = models.IntegerFiel
     #
     # vendor = models.CharField(max_length=32,verbose_name="厂商")
     # part = models.CharField(max_length=128,verbose_name="品名")

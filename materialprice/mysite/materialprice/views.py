@@ -9,11 +9,13 @@ from django.shortcuts import render
 总的来说，3号比5号要软一点。
 '''
 
+from django.db.models import Count, Min, Sum, Avg
+
 # PART 1 OF 2
 from .models import Materialprice
 from .models import Purchaseorder
 from .models import Receiving
-from django.db.models import Count, Min, Sum, Avg
+from .models import Smm
 
 # PART 2 OF 2
 # Create your views here.
@@ -47,3 +49,23 @@ def receiving(request):
 
     context = {'current_user':request.user,'page_title':'RR','item_list': item_list,'subtotal': subtotal}
     return render(request, 'materialprice/receiving.html', context)
+
+
+# designation = models.CharField(max_length=32,verbose_name="牌号")
+# pricedate = models.CharField(max_length=10,verbose_name="行情日期")
+# priceavg = models.DecimalField(max_digits=9, decimal_places=2,verbose_name="平均价")
+# yearnum = models.IntegerField(default=0, verbose_name="年")
+# monthnum = models.IntegerField(default=0, verbose_name="月")
+# quarternum = models.IntegerFiel
+def smm(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+    byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'byquarter': byquarter}
+    return render(request, 'materialprice/smm.html', context)
