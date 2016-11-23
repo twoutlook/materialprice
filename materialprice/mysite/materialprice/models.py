@@ -27,7 +27,7 @@ class Smm(models.Model):
        ('Zamak5','Zamak5'),
        ('Zn99.995','Zn99.995'),
     )
-    
+
     MONTH_CHOICES = (
       (1,1),
        (2,2),
@@ -41,14 +41,14 @@ class Smm(models.Model):
        (10,10),
        (11,11),
        (12,12),
-   
+
     )
     QUARTER_CHOICES = (
     (1,1),
        (2,2),
        (3,3),
        (4,4),
-    )    
+    )
     # num = models.IntegerField(default=0,verbose_name="第幾式")
     # designation = models.CharField(max_length=32,verbose_name="牌号")
     designation = models.CharField(default='???', choices = DESIGNATION_CHOICES, max_length=32,verbose_name="牌号")
@@ -64,6 +64,8 @@ class Smm(models.Model):
     class Meta:
         verbose_name = "上海有色網"
         verbose_name_plural = "上海有色網"
+        # http://stackoverflow.com/questions/23137420/enforcing-unique-combinations-of-fields-in-django
+        unique_together = ('designation', 'pricedate')
 
 class Purchaseorder(models.Model):
     # num = models.IntegerField(default=0,verbose_name="第幾式")

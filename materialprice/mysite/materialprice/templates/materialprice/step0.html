@@ -74,10 +74,10 @@
   </tr>
 {% for item in item_list %}
 
-    <tr>
+    <tr align='center'>
       <td>  {{ item.designation}}</td>
-      <td >  {{ item.pricedate}}</td>
-      <td>  {{ item.priceavg}}</td>
+      <td >  {{ item.pricedate | date:'Y-m-d'}}</td>
+      <td>  {{ item.priceavg | stringformat:".0f"}}</td>
       <!-- <td>  {{ item.yearnum}}</td>
       <td>  {{ item.monthnum}}</td>
       <td>  {{ item.quarternum}}</td>
