@@ -1,0 +1,64 @@
+{% extends 'materialprice/base.html' %}
+
+
+{% block content %}
+
+
+<!--{{ subtotal }}-->
+<!--{{ avgbymonth }}-->
+
+<table>
+{% regroup subtotal by designation as list01 %}
+
+{% for x in list01 %}
+{% if forloop.counter == 1 %}  
+<tr>
+<td rowspan='1'>月平均價</td>
+{% for y in x.list %}
+
+<td>{{ y.yearnum }}  </td>
+
+
+{% endfor  %}
+</tr>
+</tr>
+{% endif %}
+{% endfor  %}
+
+{% for x in list01 %}
+{% if forloop.counter == 1 %}  
+<tr align='center'>
+<td>牌號</td>
+{% for y in x.list %}
+
+<td>{{ y.monthnum }} </td>
+
+
+{% endfor  %}
+
+
+</tr>
+{% endif %}
+{% endfor  %}
+
+{% for x in list01 %}
+<tr  align='center'>
+  
+<td>{{ x.grouper }}</td>
+{% for y in x.list %}
+
+<td>{{ y.avg|stringformat:".2f" }} </td>
+
+{% endfor  %}
+<!--<td>=D{{forloop.counter | add:2 }}-B{{forloop.counter | add:2 }}</td>-->
+<!--<td>=F{{forloop.counter | add:2 }}/B{{forloop.counter | add:2 }}</td> -->
+<!--<td>=E{{forloop.counter | add:2 }}-B{{forloop.counter | add:2 }}</td>  -->
+<!--<td>=H{{forloop.counter | add:2 }}/B{{forloop.counter | add:2 }}</td> -->
+</tr>
+{% endfor  %}
+</table>
+
+
+
+
+{% endblock %}

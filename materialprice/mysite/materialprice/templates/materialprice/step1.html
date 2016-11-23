@@ -3,6 +3,88 @@
 
 {% block content %}
 
+ZZZ
+<table>
+{% regroup byquarter by designation as list01 %}
+
+{% for x in list01 %}
+{% if forloop.counter == 1 %}  
+<tr>
+<td rowspan='2'>牌號</td>
+{% for y in x.list %}
+
+<td>{{ y.yearnum }}  </td>
+
+
+{% endfor  %}
+</tr>
+</tr>
+{% endif %}
+{% endfor  %}
+
+{% for x in list01 %}
+{% if forloop.counter == 1 %}  
+<tr>
+<!--<td></td>-->
+{% for y in x.list %}
+
+<td>Q{{ y.quarternum }} </td>
+
+
+{% endfor  %}
+
+
+</tr>
+{% endif %}
+{% endfor  %}
+
+{% for x in list01 %}
+<tr>
+  
+<td>{{ x.grouper }}</td>
+{% for y in x.list %}
+
+<td>{{ y.avg|stringformat:".2f" }} </td>
+
+{% endfor  %}
+<td>=D{{forloop.counter | add:2 }}-B{{forloop.counter | add:2 }}</td>
+<td>=F{{forloop.counter | add:2 }}/B{{forloop.counter | add:2 }}</td> 
+<td>=E{{forloop.counter | add:2 }}-B{{forloop.counter | add:2 }}</td>  
+<td>=H{{forloop.counter | add:2 }}/B{{forloop.counter | add:2 }}</td> 
+</tr>
+{% endfor  %}
+</table>
+
+
+
+
+
+
+
+
+<h1>Count by 牌號|Year|Month</h1>
+<!--{{bymonthcheck}}-->
+<table>
+<tr>
+  <th> 牌號</td>
+  <th> 年</td>
+  <th>月份</td>
+    <th> Count</td>
+
+  </tr>
+{% for x in bymonthcheck %}
+  <tr align='center'>
+    <td>  {{ x.designation}}</td>
+    <td>  {{ x.yearnum}}</td>
+    <td >  {{ x.monthnum}}</td>
+    <td>  {{ x.cnt}}</td>
+
+  </tr>
+{% endfor %}
+
+</table>
+
+
 <h1>by Year|Month|牌號</h1>
 <table>
 <tr>

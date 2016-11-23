@@ -75,7 +75,8 @@ def smm(request):
 item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
     # subtotal =Receiving.objects.values("").annotate(Count('FG')).
 subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
-bymonth=Smm.objects.values('yearnum','monthnum','designation').annotate(avg=Avg('priceavg')/1000)
+avgbymonth=Smm.objects.values('yearnum','monthnum','designation').annotate(avg=Avg('priceavg')/1000)
+bymonthcheck=Smm.objects.values('yearnum','monthnum','designation').annotate(cnt=Count('designation'))
 byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
 
   
@@ -97,8 +98,23 @@ def step1(request):
     # byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
     # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
 
-    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'bymonth': bymonth}
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'bymonth': bymonth,'bymonthcheck': bymonthcheck}
     return render(request, 'materialprice/step1.html', context)
+
+def bymonth(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    # item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    # subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+    # byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'avgbymonth': avgbymonth,'bymonthcheck': bymonthcheck}
+    return render(request, 'materialprice/bymonth.html', context)
+
+
 def step2(request):
     # if not request.user.is_authenticated:
     #      return redirect('/')

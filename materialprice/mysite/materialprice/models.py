@@ -17,14 +17,46 @@ class Materialprice(models.Model):
 
 # http://www.smm.cn/
 # SMM 上海MM
+
 class Smm(models.Model):
+    DESIGNATION_CHOICES = (
+       ('A356','A356'),
+       ('A380','A380'),
+       ('ADC12','ADC12'),
+       ('Zamak3','Zamak3'),
+       ('Zamak5','Zamak5'),
+       ('Zn99.995','Zn99.995'),
+    )
+    
+    MONTH_CHOICES = (
+      (1,1),
+       (2,2),
+       (3,3),
+       (4,4),
+       (5,5),
+       (6,6),
+       (7,7),
+       (8,8),
+       (9,9),
+       (10,10),
+       (11,11),
+       (12,12),
+   
+    )
+    QUARTER_CHOICES = (
+    (1,1),
+       (2,2),
+       (3,3),
+       (4,4),
+    )    
     # num = models.IntegerField(default=0,verbose_name="第幾式")
-    designation = models.CharField(max_length=32,verbose_name="牌号")
-    pricedate = models.CharField(max_length=10,verbose_name="行情日期")
+    # designation = models.CharField(max_length=32,verbose_name="牌号")
+    designation = models.CharField(default='???', choices = DESIGNATION_CHOICES, max_length=32,verbose_name="牌号")
+    pricedate = models.DateField(max_length=10,verbose_name="行情日期")
     priceavg = models.DecimalField(max_digits=9, decimal_places=2,verbose_name="平均价")
-    yearnum = models.IntegerField(default=0, verbose_name="年")
-    monthnum = models.IntegerField(default=0, verbose_name="月")
-    quarternum = models.IntegerField(default=0, verbose_name="季")
+    yearnum = models.IntegerField(default=2016, verbose_name="年")
+    monthnum = models.IntegerField(default=11, choices = MONTH_CHOICES,verbose_name="月")
+    quarternum = models.IntegerField(default=4, choices = QUARTER_CHOICES, verbose_name="季")
 
     # remarks = models.CharField(max_length=200)
     def __str__(self):
