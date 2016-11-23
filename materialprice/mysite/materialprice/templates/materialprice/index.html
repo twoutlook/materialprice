@@ -3,28 +3,13 @@
 
 {% block content %}
 
-<h1>XXXMaterial Price</h1>
-<h2>{{ item.designation |stringformat:"s"}}&nbsp;</h2>
 
-{% for item in item_list %}
-
-
-  {% ifnotequal item.pricedate "总平均价" %}
-
-  {% else %}
-
-      <!-- {{ item.designation |stringformat:"s"}}&nbsp; -->
-      {{ item.yearnum |stringformat:"03d"}}&nbsp;
-      {{ item.weeknum |stringformat:"03d"}}&nbsp;
-      <!-- {{ item.pricedate }}&nbsp; -->
-      {{ item.avg  }}
-
-    <br>
-  {% endifnotequal %}
-<!-- {{ item.reportdate }}&nbsp; -->
-
-
-
-{% endfor %}
+<ul>
+  <li><a href="step0" >基礎數據</a>: http://www.smm.cn/, 歷史行情每日均價</li>
+  <li><a href="step1" >月均價</a></li>
+  <li><a href="step2" >季均價</a></li>
+  <li><a href="step3" >某季對某季的價差和漲跌幅</a></li>
+  
+</ul>
 
 {% endblock %}

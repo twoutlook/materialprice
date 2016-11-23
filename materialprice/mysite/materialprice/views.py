@@ -69,3 +69,57 @@ def smm(request):
 
     context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'byquarter': byquarter}
     return render(request, 'materialprice/smm.html', context)
+
+
+
+item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+bymonth=Smm.objects.values('yearnum','monthnum','designation').annotate(avg=Avg('priceavg')/1000)
+byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+
+  
+def step0(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'STEP 0','item_list': item_list,'subtotal': subtotal,'byquarter': byquarter}
+    return render(request, 'materialprice/step0.html', context)
+def step1(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    # item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    # subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+    # byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'bymonth': bymonth}
+    return render(request, 'materialprice/step1.html', context)
+def step2(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+    byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'byquarter': byquarter}
+    return render(request, 'materialprice/step2.html', context)
+def step3(request):
+    # if not request.user.is_authenticated:
+    #      return redirect('/')
+    # 总平均价
+    item_list = Smm.objects.order_by('designation', 'pricedate')[:3000]
+    # subtotal =Receiving.objects.values("").annotate(Count('FG')).
+    subtotal=Smm.objects.values('designation', 'yearnum','monthnum').annotate(avg=Avg('priceavg')/1000)
+    byquarter=Smm.objects.values('designation', 'yearnum','quarternum').annotate(avg=Avg('priceavg')/1000)
+    # item_list = Materialprice.objects.filter(materialprice__pricedate=='总平均价').order_by('designation', 'num')[:3000]
+
+    context = {'current_user':request.user,'page_title':'SMM','item_list': item_list,'subtotal': subtotal,'byquarter': byquarter}
+    return render(request, 'materialprice/step3.html', context)

@@ -25,7 +25,7 @@ SECRET_KEY = '1!_ax17pscmlx@%8gw*_%6kz#fy8yj1wzcywu^_)uzg6r8i3!6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['materialprice-twoutlook.c9users.io']
 
 
 # Application definition
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'materialprice',
 
     'import_export',
+    'mathfilters',
 
     'django.contrib.admin',
     'django.contrib.auth',

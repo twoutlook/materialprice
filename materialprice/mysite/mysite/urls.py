@@ -18,11 +18,11 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # url(r'^', include('materialprice.urls')),
+    url(r'^', include('materialprice.urls')),
 
 
-    url(r'^weeklyreport/', include('weeklyreport.urls')),
-    url(r'^materialprice/', include('materialprice.urls')),
+    # url(r'^weeklyreport/', include('weeklyreport.urls')),
+    # url(r'^materialprice/', include('materialprice.urls')),
     #
     # url(r'^', include('weeklyreport.urls')),
     # Site Home Page

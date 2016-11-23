@@ -14,10 +14,18 @@
     <div class='current_user'>
           當前用戶: {{ current_user }} &nbsp;<a href="/app001/logout">登出</a>
     </div>
-    <div class='page_title'>
-        <h1>{{ page_title }}
-        </h1>
-    </div>
+    <h1>*** NOTE ***</h1>
+<h3>這是在開發階段的項目，不正式對外開放。<br>
+本網站具有 private 設定，如未先登入無法打開項目頁面，這是先由 c9.io 防禦阻擋的。
+</h3>
+<h2>
+    
+<a href="/">回到目錄</a>
+</h2>
+    <!--<div class='page_title'>-->
+    <!--    <h1>{{ page_title }}-->
+    <!--    </h1>-->
+    <!--</div>-->
     <div class='page_data'>
         {% block content %}
         {% endblock %}

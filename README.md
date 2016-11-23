@@ -1,3 +1,18 @@
+
+apt-get install python3.5 python3.5-venv
+python3.5 -m venv myvenv
+source myvenv/bin/activate
+pip install django
+pip install django-import-export
+
+
+pip install --upgrade pip
+---------------------
+source run
+-------------------
+
+
+
 "# materialprice"
 "# materialprice"
 "# materialprice"
